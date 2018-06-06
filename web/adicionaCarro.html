@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastro de Carro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="well well-sm clearfix ls-table-group-actions">
+    <h3>Sistema de Gerencimento de Carros</h3>
+    <div class="actions pull-right">
+        <div class="btn-group">
+            <a href="adicionaCarro.html" class="btn btn-default">Incluir Registro</a>
+            <a href="#" class="btn btn-default">Gerar Relatório</a>
+        </div>
+        <button type="button" class="btn badge-danger">
+            <span class="">Excluir Todos</span>
+        </button>
+    </div>
+</div>
+<div class="">
+    <h4 style="text-align:center;">Cadastro de Carro</h4>
+</div>
+<div class="container">
+       <form class="form-horizontal" action="jsp/adicionaCarro.jsp">
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="fabricante">Fabricante</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="fabricante" placeholder="" name="fabricante">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="modelo">Modelo</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="modelo" placeholder="" name="modelo">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="placa">Placa</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="placa" placeholder="XYZ-1234" name="placa">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="valor">Valor</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="valor" placeholder="0.00" name="valor">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="ano">Ano</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="ano"  name="ano">
+            </div>
+        </div>
+        <!--
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Password:</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <div class="checkbox">
+                    <label><input type="checkbox" name="remember"> Remember me</label>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success btn-group-vertical">Enviar</button>
+                <input type="button" class="btn btn-group-vertical" value="Retornar" onClick="history.go(-1)">
+            </div>
+
+
+    </form>
+</div>
+</body>
+</html>
