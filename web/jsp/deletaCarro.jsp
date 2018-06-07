@@ -10,7 +10,12 @@
 <html>
 <head>
     <title>Excluir Carro</title>
-    <meta http-equiv="refresh" content="5; listaCarros.jsp">
+    <meta http-equiv="refresh" content="200; listaCarros.jsp">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 <%
@@ -27,8 +32,7 @@
     }
 %>
 
-<p ><%=msg%></p>
-
-
+<p style=" width: 300px; height: 90px; color: red; text-align: center; padding-top: 25px;
+    padding-left: 20px; font-size: large;  border-color: #1c7430;"><%=msg%></p>
 </body>
 </html>

@@ -925,42 +925,82 @@
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
     <table id="233" parent="3" name="tb_carros"/>
-    <column id="234" parent="233" name="ID">
+    <table id="234" parent="3" name="usuario">
+      <Comment>Cadastro de usuários</Comment>
+    </table>
+    <column id="235" parent="233" name="ID">
       <Position>1</Position>
       <DataType>int(5)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="235" parent="233" name="FABRICANTE">
+    <column id="236" parent="233" name="FABRICANTE">
       <Position>2</Position>
       <DataType>varchar(20)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="236" parent="233" name="MODELO">
+    <column id="237" parent="233" name="MODELO">
       <Position>3</Position>
       <DataType>varchar(30)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="237" parent="233" name="VALOR">
+    <column id="238" parent="233" name="VALOR">
       <Position>4</Position>
       <DataType>float|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="238" parent="233" name="PLACA">
+    <column id="239" parent="233" name="PLACA">
       <Position>5</Position>
       <DataType>varchar(10)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="239" parent="233" name="ANO">
+    <column id="240" parent="233" name="ANO">
       <Position>6</Position>
       <DataType>int(5)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="240" parent="233" name="PRIMARY">
+    <key id="241" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
+    </key>
+    <column id="242" parent="234" name="id_usuario">
+      <Position>1</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="243" parent="234" name="nome">
+      <Position>2</Position>
+      <DataType>varchar(30)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="244" parent="234" name="email">
+      <Position>3</Position>
+      <DataType>varchar(40)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="245" parent="234" name="senha">
+      <Position>4</Position>
+      <DataType>varchar(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="246" parent="234" name="usuario_email_uindex">
+      <ColNames>email</ColNames>
+      <Unique>1</Unique>
+      <Type>btree</Type>
+    </index>
+    <key id="247" parent="234" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id_usuario</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="248" parent="234" name="usuario_email_uindex">
+      <ColNames>email</ColNames>
+      <UnderlyingIndexName>usuario_email_uindex</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>
